@@ -4,6 +4,7 @@
 <!--%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>-->
 <%= form_with model:@book, local:true do |f| %>
 
+<!--エラーメッセージ表示-->
   <% if @book.errors.any? %>
   <style>
     .field_with_errors{
